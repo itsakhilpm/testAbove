@@ -11,7 +11,7 @@ export class AppComponent {
   title = 'testProject';
   count:number=0;
   on :number;
-  savedTags : string [] = [];
+  savedTags : any = [];
   isEdit :boolean = true;
 
   openTextBox() {
