@@ -1,0 +1,18 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+  <div class="row">
+      <div (click)="openTextBox()" class="box addBox">
+        <span class="big">+</span>
+        <br/>
+        <span class="btn btn-primary">Add</span>
+      </div>
+    <div class="box content-box" *ngFor="let tag of savedTags">
+      <span id='close' class="dot" (click)='removeItem(tag.index)'>x</span>
+      <div class="content">
+        <label *ngIf="!tag.isEdit">{{tag.name}}</label>
+        <button *ngIf="!tag.isEdit" class="btn btn-primary" (click)="editData(tag.index)">Edit</button>
+
+        <input *ngIf="tag.isEdit" (keydown.enter)="saveData(tag.index)" type="text" id="tagName" [(ngModel)]="tag.name" style="display:block">
+        <button *ngIf="tag.isEdit" class="btn btn-primary" (click)="saveData(tag.index)">Save</button>
+      </div>
+    </div>

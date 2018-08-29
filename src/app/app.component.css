@@ -1,0 +1,45 @@
+.box {
+    width: 200px;
+    height: 200px;
+    top: 20px;
+    left: 20px;
+    padding: 5px;
+    background-color: #007e90;
+    color: #fff;
+    font-size: 1em;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    margin-top: 5px;
+    }
+.addBox{
+  cursor: pointer;
+}
+label{
+  display: block;
+}
+.dot{
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.content-box{
+  padding-left: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#close{
+  margin-left: 160px;
+  color: #FF0000;
+}
+.big{
+  font-size: 6em;
+}
+.btn{
+  margin: 5px;
+}
+.content{
+  margin-top: 50px;
+}
